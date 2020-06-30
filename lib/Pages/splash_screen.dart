@@ -30,7 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
         Image.asset(
           'images/background_spashScreen.jpg',
           fit: BoxFit.cover,
-          height: 1000,
+          height: double.infinity,
         ),
         Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -42,6 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
               child: Image.asset(
                 'images/logo.png',
                 fit: BoxFit.contain,
+                color: Colors.white,
               ),
             )
           ],

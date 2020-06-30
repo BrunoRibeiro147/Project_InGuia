@@ -21,7 +21,7 @@ class _AppWidgetState extends State<AppWidget> {
           textTheme: GoogleFonts.latoTextTheme(Theme.of(context).textTheme),
           primaryColor: Color(0xff5BC780),
           primaryColorLight: Color(0xff5BDE64),
-          primaryColorDark: Color(0xff78D457),
+          primaryColorDark: Color(0xff7449460),
           accentColor: Color(0xff5BDEAE),
           buttonColor: Color(0xff57D4C9)),
     );

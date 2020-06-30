@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CustomBottomNavigation extends StatefulWidget {
-  CustomBottomNavigation({Key key}) : super(key: key);
+  final Function callback;
+
+  CustomBottomNavigation({Key key, this.callback}) : super(key: key);
 
   @override
   _CustomBottonNavigationState createState() => _CustomBottonNavigationState();
 }
 
 class _CustomBottonNavigationState extends State<CustomBottomNavigation> {
-  int _selectedIndex = 0;
+  int _selectedIndex = 2;
 
   var textStyle =
       GoogleFonts.montserrat(fontSize: 12, fontWeight: FontWeight.w500);
@@ -18,6 +20,7 @@ class _CustomBottonNavigationState extends State<CustomBottomNavigation> {
     setState(() {
       _selectedIndex = index;
     });
+    widget.callback(index);
   }
 
   _bottomNavigationItem({icon, title, index}) {

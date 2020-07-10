@@ -287,7 +287,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             Container(
-              height: 181,
+              height: 180,
               child: ListView.builder(
                 padding: EdgeInsets.only(left: 16),
                 itemCount: tours.length,

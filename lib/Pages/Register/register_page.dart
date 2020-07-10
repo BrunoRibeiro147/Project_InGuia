@@ -23,7 +23,9 @@ class _RegisterPageState extends State<RegisterPage> {
           labelText: title,
           focusedBorder: OutlineInputBorder(
               borderSide: BorderSide(color: Theme.of(context).primaryColor)),
-          enabledBorder: OutlineInputBorder(),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(21),
+          ),
           labelStyle: TextStyle(color: Colors.grey[400]),
         ),
       ),

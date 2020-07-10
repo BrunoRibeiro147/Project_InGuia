@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:inguia/Pages/Chat/detailChat_page.dart';
 import 'package:inguia/models/chats_model.dart';
 import 'package:inguia/models/guides_model.dart';
 
@@ -164,7 +165,8 @@ class ChatTile extends StatelessWidget {
     return InkWell(
       splashColor: Colors.black38,
       onTap: () {
-        print("Working..");
+        Navigator.of(context)
+            .push(MaterialPageRoute(builder: (context) => DetailChat()));
       },
       child: Container(
         margin: EdgeInsets.symmetric(vertical: 16),
